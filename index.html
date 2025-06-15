@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/0d35e7bb73.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="shit.jpg">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>ML & DL Enthusiast</p>
+                <h1>HI , I am <span>Shaan</span> <br>from IIT Patna</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------about-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="user.png"></div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Shaan — a sophomore pursuing a B.Tech in Mathematics and Computing at the Indian
+                        Institute of Technology (IIT) Patna. My academic interests lie at the intersection of higher
+                        mathematics and its applications in Machine Learning, Deep Learning, and Computer Vision. I
+                        actively explore the theoretical foundations of these fields while also working on practical
+                        implementations. In addition to my core interests, I enjoy frontend web development and
+                        participate in competitive programming on platforms like Codeforces and Codewars. I’m always
+                        eager to collaborate on meaningful ML projects, particularly those involving clustering
+                        algorithms and real-world problem solving. I am also deeply fascinated by advanced topics such
+                        as Natural Language Processing, Large Language Models, and Deep Neural Networks. Let’s connect
+                        and build something impactful together.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend webdev</span><br>Dealing Frontend parts of Webpages</li>
+                            <li><span>Machine learning</span><br>Real world projects involving ML algorithms</li>
+                            <li><span>Competitive Programming</span><br>Problem Solving on coding platforms</li>
+                            <li><span>DSA</span><br>Problem Solving based on various topics of Data Structures and
+                                Algorithm </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025</span><br>Built the frontend of responsive web pages, including my personal
+                                portfolio website, using HTML, CSS, and JavaScript.</li>
+                            <li><span>2025</span><br>Built an artificial neural network from scratch using python
+                                libraries like keras tensorflow and pytorch</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024-2028</span><br>Btech. Mathematics and Computing , IITP</li>
+                            <li><span>2028-2029</span><br>Mtech. Mathematics and Computing , IITP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --services--- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Deep Learning and Neural Networks</h2>
+                    <p>I'm exploring deep neural networks and architectures like CNNs and RNNs for tasks involving
+                        computer vision and NLP.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h2>Research and Collaboration</h2>
+                    <p>I'm open to collaborative projects, especially in areas like unsupervised learning, real-world ML
+                        problems, or applications of LLMs and NLP.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-camera"></i>
+                    <h2>Computer Vision</h2>
+                    <p>I work on image classification and object detection using deep learning frameworks like
+                        TensorFlow and PyTorch, with a focus on solving real-world visual problems.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>This App connects you to the talented people arounf the world.
+                            Download it from the play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>This App connects you to the talented people arounf the world.
+                            Download it from the play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>This App connects you to the talented people arounf the world.
+                            Download it from the play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sm06shan@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9334356200</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/shaan.mujtaba.9"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/shaan.got.nerfed_/"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/shaan-mujtaba-734384274/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="CV Template.pdf" download class="btn btn2">Download my CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name = "submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id ="msg"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzRi1uZeiomPBOo_zTT8kG-XJJurf8KkbkyXsPHosg9TBsp5JpXl6sROkA44OEfW4CQLQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message Sent Successfully to Shaan !!"
+        setTimeout(function(){
+            msg.innerHTML =""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+
+</html>
